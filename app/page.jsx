@@ -147,6 +147,19 @@ export default function Page() {
                 >
                   Open in Phantom
                 </a>
+                <a
+                  className="btn ghost"
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                    'Just got destroyed by Brutally Honest AI:\n\n"' +
+                      result.split('\n')[0].slice(0, 180) +
+                      '"\n\n'
+                  )}&url=${encodeURIComponent('https://brutally-honest-ai.vercel.app')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none' }}
+                >
+                  Share the roast
+                </a>
               </div>
             </div>
           </div>
